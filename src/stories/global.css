@@ -1,0 +1,11 @@
+body {
+	font-family: sans-serif;
+	max-width: 37rem;
+	margin-inline: auto;
+}
+
+output {
+	font-family: monospace;
+	font-size: 1.5em;
+	font-weight: bold;
+}

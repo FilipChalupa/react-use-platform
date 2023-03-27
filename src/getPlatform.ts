@@ -24,5 +24,5 @@ export const getPlatform = (): Platform => {
 	) {
 		return 'mac'
 	}
-	return 'unkwnown'
+	return 'unknown'
 }

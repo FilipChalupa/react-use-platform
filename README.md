@@ -4,7 +4,7 @@ React hook to detect client platform.
 
 See it in action at [https://filipchalupa.cz/react-use-platform/](https://filipchalupa.cz/react-use-platform/).
 
-Use this hook to e.g. offer users to download an app from a platform specific store Google Play, Apple App Store, Microsoft Store.
+Use this hook to e.g. offer users to download an app from a platform specific store like Google Play, Apple App Store, Microsoft Store.
 
 ## Installation
 

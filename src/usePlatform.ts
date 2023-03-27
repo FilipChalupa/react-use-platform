@@ -3,7 +3,7 @@ import { getPlatform } from './getPlatform'
 import type { Platform } from './Platform'
 
 
-export const usePlatform = (initial: Platform = 'unkwnown') => {
+export const usePlatform = (initial: Platform = 'unknown') => {
 	const [platform, setPlatform] = useState(initial)
 
 	useEffect(() => {

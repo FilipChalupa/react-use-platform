@@ -15,7 +15,7 @@ npm install react-use-platform
 ## Usage
 
 ```jsx
-import { usePlaform } from 'react-use-platform'
+import { usePlatform } from 'react-use-platform'
 
 const App = () => {
 	const platform = usePlatform()

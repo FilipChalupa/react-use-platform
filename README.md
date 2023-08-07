@@ -24,6 +24,14 @@ const App = () => {
 }
 ```
 
+### Without hook
+
+```js
+import { getPlatform } from 'react-use-platform'
+
+console.log(`Your platform is ${getPlatform()}.`)
+```
+
 ### Possible values
 
 ```typescript

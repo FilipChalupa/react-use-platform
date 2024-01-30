@@ -1,6 +1,6 @@
 {
 	"name": "react-use-platform",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"description": "React hook to detect client platform.",
 	"main": "./dist/index.js",
 	"module": "./dist/index.es.js",

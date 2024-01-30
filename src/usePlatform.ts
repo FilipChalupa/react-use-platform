@@ -1,14 +1,15 @@
-import { useEffect, useState } from 'react'
-import { getPlatform } from './getPlatform'
+import { useCallback, useSyncExternalStore } from 'react'
 import type { Platform } from './Platform'
-
+import { getPlatform } from './getPlatform'
 
 export const usePlatform = (initial: Platform = 'unknown') => {
-	const [platform, setPlatform] = useState(initial)
-
-	useEffect(() => {
-		setPlatform(getPlatform())
+	const subscribe = useCallback(() => {
+		// Nothing to subscribe to
+		return () => {
+			// Nothing to unsubscribe from
+		}
 	}, [])
-
-	return platform
+	const getSnapshot = useCallback(() => getPlatform(), [])
+	const getServerSnapshot = useCallback(() => initial, [initial])
+	return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)
 }

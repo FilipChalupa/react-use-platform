@@ -1,8 +1,8 @@
 import { useCallback, useSyncExternalStore } from 'react'
 import type { Platform } from './Platform'
-import { getPlatform } from './getPlatform'
+import { getPlatform, unknownPlatform } from './getPlatform'
 
-export const usePlatform = (initial: Platform = 'unknown') => {
+export const usePlatform = (initial: Platform = unknownPlatform) => {
 	const subscribe = useCallback(() => {
 		// Nothing to subscribe to
 		return () => {
